@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Couldn’t find your Google Account]]>
+    </line>
+    <line>
+      <![CDATA[https://accounts.google.com/signin/v2/usernamerecovery?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Den&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]>
+    </line>
+    <line>
+      <![CDATA[About 51,500,000 results (0.56 seconds) ]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24987" started-at="2021-01-25T00:28:07Z" finished-at="2021-01-25T00:28:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24987" started-at="2021-01-25T00:28:07Z" finished-at="2021-01-25T00:28:32Z">
+      <class name="POM_Design_Test_Cases.T_01_How_To_Locate_Elements">
+        <test-method status="PASS" signature="Launch_Browser()[pri:0, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="Launch_Browser" is-config="true" duration-ms="9776" started-at="2021-01-25T02:28:07Z" finished-at="2021-01-25T02:28:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_Browser -->
+        <test-method status="PASS" signature="Login_With_Invalid_Email()[pri:1, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="Login_With_Invalid_Email" duration-ms="6916" started-at="2021-01-25T02:28:16Z" finished-at="2021-01-25T02:28:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Couldn’t find your Google Account]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login_With_Invalid_Email -->
+        <test-method status="PASS" signature="GO_TO_Home_Page(org.testng.ITestResult)[pri:0, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="GO_TO_Home_Page" is-config="true" duration-ms="725" started-at="2021-01-25T02:28:23Z" finished-at="2021-01-25T02:28:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login_With_Invalid_Email status=SUCCESS method=T_01_How_To_Locate_Elements.Login_With_Invalid_Email()[pri:1, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79] output=Couldn’t find your Google Account]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GO_TO_Home_Page -->
+        <test-method status="PASS" signature="Verify_Forgot_Email_URL()[pri:2, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="Verify_Forgot_Email_URL" duration-ms="2171" started-at="2021-01-25T02:28:24Z" finished-at="2021-01-25T02:28:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[https://accounts.google.com/signin/v2/usernamerecovery?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Den&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify_Forgot_Email_URL -->
+        <test-method status="PASS" signature="GO_TO_Home_Page(org.testng.ITestResult)[pri:0, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="GO_TO_Home_Page" is-config="true" duration-ms="541" started-at="2021-01-25T02:28:26Z" finished-at="2021-01-25T02:28:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_Forgot_Email_URL status=SUCCESS method=T_01_How_To_Locate_Elements.Verify_Forgot_Email_URL()[pri:2, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79] output=https://accounts.google.com/signin/v2/usernamerecovery?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fhl%3Den&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GO_TO_Home_Page -->
+        <test-method status="FAIL" signature="Google_Search()[pri:3, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="Google_Search" duration-ms="3155" started-at="2021-01-25T02:28:27Z" finished-at="2021-01-25T02:28:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at POM_Design_Test_Cases.T_01_How_To_Locate_Elements.Google_Search(T_01_How_To_Locate_Elements.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[About 51,500,000 results (0.56 seconds) ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Google_Search -->
+        <test-method status="PASS" signature="GO_TO_Home_Page(org.testng.ITestResult)[pri:0, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="GO_TO_Home_Page" is-config="true" duration-ms="669" started-at="2021-01-25T02:28:30Z" finished-at="2021-01-25T02:28:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Google_Search status=FAILURE method=T_01_How_To_Locate_Elements.Google_Search()[pri:3, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79] output=About 51,500,000 results (0.56 seconds) ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GO_TO_Home_Page -->
+        <test-method status="PASS" signature="Close_Driver()[pri:0, instance:POM_Design_Test_Cases.T_01_How_To_Locate_Elements@51efea79]" name="Close_Driver" is-config="true" duration-ms="1005" started-at="2021-01-25T02:28:31Z" finished-at="2021-01-25T02:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_Driver -->
+      </class> <!-- POM_Design_Test_Cases.T_01_How_To_Locate_Elements -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
